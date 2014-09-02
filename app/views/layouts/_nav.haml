@@ -1,0 +1,3 @@
+%ul
+	- @categories.order('place').map do |cat|
+		=nav_link "#{cat.title}", "/#{cat.name}"

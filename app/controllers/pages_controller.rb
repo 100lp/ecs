@@ -1,5 +1,19 @@
 class PagesController < ApplicationController
-	def index
-		
-	end
+  before_filter :help
+
+  def help
+    @current_page = request.env['PATH_INFO']
+    @categories = Category.all
+  end
+
+  def index
+  end
+
+  def about
+  end
+
+  def show
+    
+  end
+
 end

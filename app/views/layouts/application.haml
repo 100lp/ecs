@@ -9,15 +9,14 @@
   %body
     %header
       = link_to '', '/', class: 'logo'
-      %aside
-        #info
-            
-        %nav
+      #telefon
+        = render 'layouts/telefon'
+    %nav
+      = render 'layouts/nav'
 
     %section
-      #left_nav
-
       #content
         = yield
+
     %footer
       %aside
