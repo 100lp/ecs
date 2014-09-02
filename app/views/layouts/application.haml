@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title Artpovar
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body
+    %header
+      = link_to '', '/', class: 'logo'
+      %aside
+        #info
+            
+        %nav
+
+    %section
+      #left_nav
+
+      #content
+        = yield
+    %footer
+      %aside
