@@ -1,0 +1,39 @@
+#banner
+	text-align: center
+
+	a
+		overflow: hidden
+		display: inline-block
+		text-align: center
+		height: 150px
+
+		span
+			display: block
+			color: rgba(150,150,150,0.8)
+			text-shadow: 1px 1px 2px white, 0 0 0px black
+			font-size: 28px
+			font-family: "PF Din Display Pro Regular"
+
+		div
+			height: 107px
+			width: 109px
+			display: inline-block
+			background-position: center top
+
+
+		&:first-child
+			div
+				background: url('banner_01.png') no-repeat
+
+		&:nth-child(2)
+			margin: 0 100px
+
+			div
+				background: url('banner_02.png') no-repeat
+
+		&:last-child
+			div
+				background: url('banner_03.png') no-repeat
+
+		&:hover
+			opacity: 0.8
