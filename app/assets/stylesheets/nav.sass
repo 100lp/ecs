@@ -38,3 +38,96 @@ nav
         &:hover, &:focus
           color: white
           text-shadow: 1px 1px 2px #888
+
+section
+  nav
+    text-align: center
+    padding-bottom: 12px
+
+    a
+      overflow: hidden
+      display: inline-block
+      text-align: center
+
+      span
+        display: block
+        color: rgba(150,150,150,0.8)
+        text-shadow: 1px 1px 2px white, 0 0 0px black
+        font-size: 28px
+        font-family: "PF Din Display Pro Regular"
+
+      div
+        height: 107px
+        width: 109px
+        display: inline-block
+        background-position: center top
+
+
+      &:first-child
+        div
+          background: url('banner_01.png') no-repeat
+
+      &:nth-child(2)
+        margin: 0 100px
+
+        div
+          background: url('banner_02.png') no-repeat
+
+      &:last-child
+        div
+          background: url('banner_03.png') no-repeat
+
+      &:hover
+        opacity: 0.8
+
+  #content
+    nav
+      padding: 0
+      a
+        span
+          color: white
+          background: #2C54D4
+          font-size: 22px
+          width: 250px
+          padding: 20px 10px
+          border-radius: 10px
+          text-shadow: none
+
+        div
+          height: 189px
+          width: 227px
+          display: inline-block
+          background-position: center center !important
+          background-repeat: no-repeat !important
+
+
+        &:first-child
+          div
+            background: url('delivery.png')
+
+        &:nth-child(2)
+          margin: 0 35px
+
+          div
+            background: url('remote.png')
+
+        &:last-child
+          div
+            background: url('reliability.png')
+
+footer
+  nav
+    ul
+      background: none
+      box-shadow: none
+      text-align: left
+
+      li
+        margin: 0 28px
+        &:first-child
+          margin-left: 0
+        &:last-child
+          margin-right: 0
+        a
+          font-weight: none
+          font-family: "PF Din Display Pro Light"

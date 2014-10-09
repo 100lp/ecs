@@ -15,10 +15,15 @@
       = render 'layouts/nav'
 
     %section
+      %nav
+        = render 'layouts/nav_content'
       #banner
         = render 'layouts/banner'
       #content
         = yield
 
     %footer
+      %nav
+        = render 'layouts/nav_footer'
       %aside
+        = render 'layouts/footer'
