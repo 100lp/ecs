@@ -1,17 +1,9 @@
-%p
-	Нас выбирают за комфорт, спокойствие и надёжность
 %nav
-	= link_to '#', target: '_blank' do
-		%div
-		%span
-			Бесплатная доставка
-
-	= link_to '#', target: '_blank' do
-		%div
-		%span
-			Удаленное оформление
-
-	= link_to '#', target: '_blank' do
-		%div
-		%span
-			Надежность
+  = render 'layouts/nav_content'
+#banner
+  = render 'layouts/banner'
+#content
+  %p
+    Нас выбирают за комфорт, спокойствие и надёжность
+  %nav
+    = render 'layouts/nav_aside'

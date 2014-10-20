@@ -1,3 +1,4 @@
 %ul
-	- @categories.order('place').map do |cat|
-		=nav_link "#{cat.title}", "/#{cat.name}"
+  - @categories.order('place').map do |cat|
+    - if cat.place < 6
+      =nav_link "#{cat.title}", "/#{cat.name}"

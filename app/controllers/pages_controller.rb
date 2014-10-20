@@ -12,7 +12,20 @@ class PagesController < ApplicationController
   def about
   end
 
+  def partners
+  end
+
+  def about
+  end
+
   def why
+  end
+
+  def insurance    
+  end
+
+  def tehosmotr
+    
   end
 
   def show

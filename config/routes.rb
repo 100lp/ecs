@@ -13,9 +13,13 @@ Rails.application.routes.draw do
     # navigation
     get '/about', to: 'pages#about'
     get '/message', to: 'pages#message'
-    get '/partners ', to: 'pages#partners'
+    get '/partners', to: 'pages#partners'
     get '/why', to: 'pages#why'
     get '/contacts', to: 'pages#contacts'
+
+    # additionaly
+    get '/tehosmotr', to: 'pages#tehosmotr'
+    get '/insurance', to: 'pages#insurance'
 
     resources :categories, only: [], path: ''  do
       resources :articles, only: :show, path: ''

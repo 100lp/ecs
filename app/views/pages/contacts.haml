@@ -1,2 +1,47 @@
-%h2
-	contacts
+%nav
+  = render 'layouts/nav_content'
+#content.contacts
+  %h1
+    КОНТАКТЫ
+
+  %p
+    Адреса наших центров
+
+  %div
+    = image_tag 'map_01.png'
+    %div
+      %p.text
+        г. Санкт-Петербург
+        %br
+        Ул. Салова д.40 "ЕВРОАВТО"
+        %br
+        Телефон: 8 (880) 676-45-33
+        %br
+        e-mail: info@osagoplusto.ru
+
+  %div
+    = image_tag 'map_02.png'
+    %div
+      %p.text
+        г. Санкт-Петербург
+        %br
+        Индустриальный проспект д. 47
+        %br
+        корпус 2 "ЕВРОАВТО"
+        %br
+        Телефон: 8 (880) 676-45-33
+        %br
+        e-mail: info@osagoplusto.ru
+  %div
+    = image_tag 'map_03.png'
+    %div
+      %p.text
+        г. Санкт-Петербург
+        %br
+        Народного ополчения д. 147
+        %br
+        корпус 2 "АВТОСТОЛИЦА"
+        %br
+        Телефон: 8 (880) 676-45-33
+        %br
+        e-mail: info@osagoplusto.ru
