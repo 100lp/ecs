@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     # additionaly
     get '/tehosmotr', to: 'pages#tehosmotr'
     get '/insurance', to: 'pages#insurance'
+    get '/osago', to: 'pages#osago'
+    get '/green-card', to: 'pages#green'
 
     resources :categories, only: [], path: ''  do
       resources :articles, only: :show, path: ''

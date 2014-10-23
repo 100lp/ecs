@@ -32,4 +32,12 @@ class PagesController < ApplicationController
     
   end
 
+  def osago
+    
+  end
+
+  def green
+    
+  end
+
 end

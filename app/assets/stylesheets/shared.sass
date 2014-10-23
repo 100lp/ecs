@@ -1,0 +1,32 @@
+.silver-shadow
+  display: block
+  color: rgba(150, 150, 150, 0.4) !important
+  text-shadow: 1px 1px 2px white, 0 0 0px #444
+  font-size: 28px
+  font-family: "PF Din Display Pro Regular"
+  margin-top: 12px
+
+.menu
+  text-align: center
+
+  > a
+    display: block
+    height: 26px
+    margin: 0 0 10px 0
+
+  nav
+    padding: 0
+    margin-right: 25px
+    max-height: 0
+    overflow: hidden
+
+    /* Set our transitions up. */
+    -webkit-transition: max-height 0.8s
+    -moz-transition: max-height 0.8s
+    transition: max-height 0.8s
+
+  &.active
+    nav
+      max-height: 200px
+
+
