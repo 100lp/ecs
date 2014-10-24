@@ -1,4 +1,6 @@
 %ul
-  - @categories.order('place').map do |cat|
-    - if cat.place < 6
-      =nav_link "#{cat.title}", "/#{cat.name}"
+  =nav_link 'О компании', '/about'
+  =nav_link 'Обратная связь', '/message'
+  =nav_link 'Партнёры', '/partners'
+  =nav_link 'Почему мы?', '/why'
+  =nav_link 'Контакты', '/contacts'
