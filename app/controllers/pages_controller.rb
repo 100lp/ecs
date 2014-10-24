@@ -3,7 +3,6 @@ class PagesController < ApplicationController
 
   def help
     @current_page = request.env['PATH_INFO']
-    @categories = Category.all
   end
 
   def index
