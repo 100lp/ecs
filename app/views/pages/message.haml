@@ -1,4 +1,25 @@
 = render 'layouts/nav_content'
 #content.message
   %h1
-    Раздел временно в разработке
+    ОБРАТНАЯ СВЯЗЬ
+
+  %ul
+    %li
+      %span Выберите тему сообщения :
+      %input
+    %li
+      %span Ваше имя :
+      %input
+    %li
+      %span Телефон :
+      %input
+    %li
+      %span E-mail :
+      %input
+    %li
+      %span Ваше сообщение :
+      %input
+
+  = link_to '#' do
+    %span.button
+      Отправить
